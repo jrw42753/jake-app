@@ -1,0 +1,198 @@
+body {
+    background-color: #19242e;
+}
+a {
+    color: #74C2D2;
+}
+a:hover{
+    color: #189AB4;
+}
+.home-container {
+    margin-top: 100px;
+}
+
+.main-page {
+    display: flex;
+}
+
+.custom-navbar {
+    border-bottom: 1px solid #696969; 
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.profile-icon-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-card {
+    margin-top: 25px;
+    text-align: left;
+    padding: 4px 18px;
+}
+
+.custom-list-group {
+    border-top: 2px solid #fff !important;
+}
+
+.custom-list-item {
+    background-color: #343a40 !important;
+    border-bottom: 1px solid #696969 !important;
+}
+
+.last-custom-list-item {
+    background-color: #343a40 !important;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card-styles {
+    margin: 0px 10px 20px 10px;
+    width: 100% !important;
+}
+
+.card-title-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.card-text {
+    margin-top: 8px;
+}
+
+/* chips styles */
+
+.chip-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip {
+    border-radius: 15px;
+    padding: 0px 10px;
+    height: 30px;
+    margin: 3px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.space {
+    width: 4px;
+}
+
+.firebase {
+    background-color: #FFCB2B;
+    color: black;
+    border: 3px solid #F5820D;
+}
+
+.angular {
+    background-color: #B52E31;
+    color: white;
+    border: 3px solid black;
+}
+
+.angularmaterial{
+    background-color: #1a75ff;
+    color: white;
+    border:3px solid #B52E31;
+}
+
+.react {
+    background-color: #2B2C2E;
+    color: #61dbfb;
+    border: 3px solid #61dbfb;
+}
+
+.react-bootstrap {
+    background-color: #594080;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+
+.css{
+    background-color: #0868AC;
+    color: white;
+    border: 3px solid #131B28;
+}
+
+.java {
+    background-color: #5382a1; 
+    color:#f89820; 
+    border: 3px solid #f89820;
+}
+
+.springboot {
+    background-color: rgb(57, 172, 57);
+    color:white;
+    border: 3px solid rgb(57, 172, 57);
+}
+
+.googledatastudio {
+    background-color: transparent;
+    border: 3px solid;
+    border-color: #4285F4 #FBBC05 #EA4335 #34A853;
+}
+
+.googledatastudio span:nth-child(6n+1){
+    color: #4285F4;
+}
+
+.googledatastudio span:nth-child(6n+2){
+    color: #EA4335; 
+}
+
+.googledatastudio span:nth-child(6n+3){
+    color: #FBBC05;
+}
+.googledatastudio span:nth-child(6n+4){
+    color: #4285F4;
+}
+.googledatastudio span:nth-child(6n+5){
+    color: #34A853;
+}
+.googledatastudio span:nth-child(6n){
+    color: #EA4335;
+}
+.googledatastudio span:nth-child(n+7){
+    color: #4285F4;
+}
+
+.microsoftflow {
+    background-color: #00a4ef;
+    color:#ffffff;
+}
+
+@media only screen and (max-width: 775px) {
+    .main-page {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .home-container{
+        margin-top: 50px;
+    }
+
+    .profile-container {
+        margin: 30px auto;
+    }
+
+    .card-container {
+        margin: auto;
+    }
+
+    .custom-card-styles {
+        margin: 0px auto 20px auto;
+    }
+  }
