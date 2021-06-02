@@ -12,7 +12,7 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 const SkillsCard = ({skills}) => {
 
     return (
-        <Card bg="dark" text="white" style={{ width: '18rem' }} className="skills-card">
+        <Card bg="dark" text="white" style={{ width: '18rem' }} className="shadow skills-card">
             <Card.Body className="custom-card-body">
                 <Card.Title>Skills</Card.Title>
             </Card.Body>
