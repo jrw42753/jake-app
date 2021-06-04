@@ -26,7 +26,8 @@ function Homepage() {
                 <SkillsCard />
             </div>
             <div className="card-container">
-                {experiences && experiences.map(experience => <ExperienceCard key={experience.id} experience={experience} />)}
+                <h3 className="portfolio-title">Portfolio</h3>
+                {experiences && experiences.sort((a, b) => a.rank - b.rank).map(experience => <ExperienceCard key={experience.id} experience={experience} />)}
             </div>
         </div>
     );

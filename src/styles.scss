@@ -26,7 +26,7 @@ a:hover{
 .profile-container {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .profile-icon-group {
@@ -51,6 +51,12 @@ a:hover{
 
 .last-custom-list-item {
     background-color: #343a40 !important;
+}
+
+.portfolio-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .card-container {
@@ -132,7 +138,7 @@ p.card-text {
 }
 
 .java {
-    background-color: #5382a1; 
+    background-color: transparent; 
     color:#f89820; 
     border: 3px solid #f89820;
 }
@@ -178,6 +184,18 @@ p.card-text {
     color:#ffffff;
 }
 
+.cypress {
+    background-color: transparent;
+    color:white;
+    border: 3px solid rgb(4, 195, 142);
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-title-link {
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 775px) {
     .main-page {
       flex-direction: column;
@@ -198,9 +216,5 @@ p.card-text {
 
     .custom-card-styles {
         margin: 0px auto 20px auto;
-    }
-
-    .card-title-link {
-        flex-direction: column;
     }
   }
