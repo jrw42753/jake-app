@@ -12,6 +12,7 @@ function Education() {
     const query = educationRef.orderBy('rank');
     const [education] = useCollectionData(query, { idField: 'id' });
 
+    
 
     return (
         <div className="card-container">
