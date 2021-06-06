@@ -8,8 +8,7 @@ import 'firebase/firestore';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import fbConfig from '../../firebase/fbConfig'
 import ExperienceCard from '../shared/ExperienceCard'
-import ProfileCard from '../shared/ProfileCard'
-import SkillsCard from '../shared/SkillsCard'
+
 
 
 function Homepage() {
@@ -20,24 +19,12 @@ function Homepage() {
     const [experiences] = useCollectionData(query, { idField: 'id' });
 
     return (
-        <div className="main-page">
-            <div className="profile-container">
-                <ProfileCard />
-                <SkillsCard />
-            </div>
-            <div className="card-container">
-                <h3 className="portfolio-title">Portfolio</h3>
-                {experiences && experiences.sort((a, b) => a.rank - b.rank).map(experience => <ExperienceCard key={experience.id} experience={experience} />)}
-            </div>
+        <div className="card-container">
+            <h3 className="portfolio-title">Portfolio</h3>
+            {experiences && experiences.sort((a, b) => a.rank - b.rank).map(experience => <ExperienceCard key={experience.id} experience={experience} />)}
         </div>
     );
 }
 
-
-// const mapStateToProps = (state) => {
-//     return {
-//         experiences: state.firestore.ordered.projects
-//     }
-// }
 
 export default Homepage
