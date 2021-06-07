@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import ProfileCard from '../src/components/shared/ProfileCard'
 import SkillsCard from '../src/components/shared/SkillsCard'
 import Education from './components/Education/Education';
+import Jobs from './components/Jobs/Jobs';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route exact path='/'component={Homepage} />
               <Route exact path='/portfolio' component={Homepage} />
               <Route exact path='/education' component={Education} />
+              <Route exact path='/experience' component={Jobs} />
           </Switch>
           </div>
         </div>

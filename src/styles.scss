@@ -215,6 +215,20 @@ p.card-text {
 }
 /* END Education Page */
 
+/* Jobs Page */
+
+ul {
+    padding-left: 15px;
+}
+
+.job-logo-img {
+    margin: auto 30px auto 0px;
+    border-radius: 50%;
+}
+
+/* END Jobs Page */
+
+
 @media only screen and (max-width: 1000px) {
     .card-title-link {
         flex-direction: column;
@@ -230,6 +244,10 @@ p.card-text {
 
     .education-body {
         width: 100%;
+    }
+
+    .job-logo-img {
+        margin: auto auto 30px auto;
     }
 }
 
