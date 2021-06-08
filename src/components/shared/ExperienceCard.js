@@ -18,9 +18,9 @@ const ExperienceCard = ({experience}) => {
     const renderCardLink = () => {
         if (typeof experience.javaUrl !== 'undefined') {
             let texts = {angularText: "Angular Repo", javaText: "Java Repo"}
-            return <div><Card.Link href={experience.repoUrl}>{texts.angularText} <FontAwesomeIcon icon={faExternalLinkAlt} /></Card.Link> <Card.Link href={experience.javaUrl}>{texts.javaText} <FontAwesomeIcon icon={faExternalLinkAlt} /></Card.Link></div>
+            return <div><Card.Link target="_blank" href={experience.repoUrl}>{texts.angularText} <FontAwesomeIcon icon={faExternalLinkAlt} /></Card.Link> <Card.Link href={experience.javaUrl}>{texts.javaText} <FontAwesomeIcon icon={faExternalLinkAlt} /></Card.Link></div>
         } else {
-            return <div><Card.Link href={experience.repoUrl}>{urlText} <FontAwesomeIcon icon={faExternalLinkAlt} /></Card.Link></div>
+            return <div><Card.Link target="_blank" href={experience.repoUrl}>{urlText} <FontAwesomeIcon icon={faExternalLinkAlt} /></Card.Link></div>
         }
     }
     
