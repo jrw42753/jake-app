@@ -15,7 +15,6 @@ const ExperienceCard = ({experience}) => {
     } else {
         urlText = "Repository";
     }
-    console.log("javaUrl: ", experience.javaUrl)
     const renderCardLink = () => {
         if (typeof experience.javaUrl !== 'undefined') {
             let texts = {angularText: "Angular Repo", javaText: "Java Repo"}

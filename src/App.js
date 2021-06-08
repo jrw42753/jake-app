@@ -6,6 +6,7 @@ import ProfileCard from '../src/components/shared/ProfileCard'
 import SkillsCard from '../src/components/shared/SkillsCard'
 import Education from './components/Education/Education';
 import Jobs from './components/Jobs/Jobs';
+import Photobook from './components/Photobook/Photobook';
 
 function App() {
   return (
@@ -13,18 +14,45 @@ function App() {
       <div className="App">
         <Navigation />
         <div className="container home-container">
-          <div className="main-page">
-            <div className="profile-container">
-                <ProfileCard />
-                <SkillsCard />
-            </div>
           <Switch>
-              <Route exact path='/'component={Homepage} />
-              <Route exact path='/portfolio' component={Homepage} />
-              <Route exact path='/education' component={Education} />
-              <Route exact path='/experience' component={Jobs} />
+              <Route exact path='/'>
+                <div className="main-page">
+                  <div className="profile-container">
+                      <ProfileCard />
+                      <SkillsCard />
+                  </div>
+                  <Homepage />
+                </div>
+              </Route>
+              <Route exact path='/portfolio'>
+                <div className="main-page">
+                  <div className="profile-container">
+                      <ProfileCard />
+                      <SkillsCard />
+                  </div>
+                  <Homepage />
+                </div>
+              </Route>
+              <Route exact path='/education'>
+                <div className="main-page">
+                  <div className="profile-container">
+                      <ProfileCard />
+                      <SkillsCard />
+                  </div>
+                  <Education />
+                </div>
+              </Route>
+              <Route exact path='/experience'>
+                <div className="main-page">
+                  <div className="profile-container">
+                      <ProfileCard />
+                      <SkillsCard />
+                  </div>
+                  <Jobs />
+                </div>
+              </Route>
+              <Route exact path='/photobook' component={Photobook} />
           </Switch>
-          </div>
         </div>
       </div>
     </BrowserRouter>

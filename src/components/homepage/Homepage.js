@@ -14,7 +14,6 @@ import ExperienceCard from '../shared/ExperienceCard'
 function Homepage() {
     const firestore = firebase.firestore();
     const experiencesRef = firestore.collection('experiences');
-    console.log("experiences: ", experiencesRef);
     const query = experiencesRef.orderBy('title');
     const [experiences] = useCollectionData(query, { idField: 'id' });
 

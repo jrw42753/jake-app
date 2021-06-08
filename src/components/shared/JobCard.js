@@ -11,14 +11,14 @@ const JobCard = ({job}) => {
             <Card.Body>
                 <div className="education-card-container">
                     <img src={job.logo} className="job-logo-img shadow" />
-                    <div className="education-body">
+                    <div className="job-body">
                         <Card.Title>{job.company}</Card.Title>
                         <ListGroup variant="flush" className="custom-list-group">
                             <ListGroupItem className="custom-list-item">{job.title}</ListGroupItem>
                             <ListGroupItem className="custom-list-item">{job.time}</ListGroupItem>
                             <ListGroupItem className="custom-list-item">
                                 <ul>
-                                    {job.duties && job.duties.map(dutie => <li>{dutie}</li>)}
+                                    {job.duties && job.duties.map(dutie => <li key={dutie}>{dutie}</li>)}
                                 </ul>
                             </ListGroupItem>
                         </ListGroup>

@@ -224,10 +224,55 @@ ul {
 .job-logo-img {
     margin: auto 30px auto 0px;
     border-radius: 50%;
-    width: 100px;
+    width: 90px;
+}
+
+.job-body {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
 /* END Jobs Page */
+
+/* Photobook page */
+
+.picture-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-auto-rows: 10px;
+    justify-content: center;
+}
+
+.large {
+    margin: 10px;
+    grid-row-end: span 30;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: -0px 5px 10px 0px grey;
+}
+
+.medium {
+    margin: 10px;
+    grid-row-end: span 20;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: -0px 5px 10px 0px grey;
+}
+.small {
+    margin: 10px;
+    grid-row-end: span 15;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: -0px 5px 10px 0px grey;
+}
+.photo {
+    max-width: 250px;
+    margin:0 -100%;
+}
+
+/* END Photobook page */
 
 
 @media only screen and (max-width: 1000px) {
@@ -249,6 +294,10 @@ ul {
 
     .job-logo-img {
         margin: auto auto 30px auto;
+    }
+
+    .job-body {
+        width: 100%;
     }
 }
 

@@ -5,7 +5,6 @@ class StackChip extends React.Component {
     
     constructor(props) {
         super(props);
-        console.log("props: ", props)
         this.stackToList = this.stackToList.bind(this);
         this.state = {
             stackClass: this.props.stack.toLowerCase().split(" ").join("") + " chip",
