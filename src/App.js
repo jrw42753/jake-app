@@ -26,7 +26,7 @@ function App() {
               </Route>
               <Route exact path='/portfolio'>
                 <div className="main-page">
-                  <div className="profile-container">
+                  <div className="profile-container profile-edu-ex">
                       <ProfileCard />
                       <SkillsCard />
                   </div>
@@ -35,7 +35,7 @@ function App() {
               </Route>
               <Route exact path='/education'>
                 <div className="main-page">
-                  <div className="profile-container">
+                  <div className="profile-container profile-edu-ex">
                       <ProfileCard />
                       <SkillsCard />
                   </div>
@@ -44,7 +44,7 @@ function App() {
               </Route>
               <Route exact path='/experience'>
                 <div className="main-page">
-                  <div className="profile-container">
+                  <div className="profile-container profile-edu-ex">
                       <ProfileCard />
                       <SkillsCard />
                   </div>

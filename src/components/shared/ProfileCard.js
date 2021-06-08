@@ -10,7 +10,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const ProfileCard = ({profile}) => {
 
     return (
-        <Card className="shadow" bg="dark" text="white" style={{ width: '18rem' }}>
+        <Card className="shadow profile-card" bg="dark" text="white" style={{ width: '18rem' }}>
             <Card.Img variant="top" src="https://firebasestorage.googleapis.com/v0/b/portfolio-7373a.appspot.com/o/profile.png?alt=media&token=cae8f93f-37c2-4f97-b23a-eb113e08cd51" />
             <Card.Body>
                 <Card.Title>Jake Wiesenthal</Card.Title>
