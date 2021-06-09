@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card'
 import { string, any } from 'prop-types';
 import StackChip from './StackChip';
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ExperienceCard = ({experience}) => {
@@ -23,13 +24,21 @@ const ExperienceCard = ({experience}) => {
             return <div><Card.Link target="_blank" href={experience.repoUrl}>{urlText} <FontAwesomeIcon icon={faExternalLinkAlt} /></Card.Link></div>
         }
     }
+
+    const renderWebsiteLink = () => {
+        if (experience.website) {
+            return <span><Card.Link target="_blank" href={experience.website}><FontAwesomeIcon icon={faLink} /></Card.Link></span>
+        }
+    }
     
 
     return (
         <Card bg="dark" text="white" border ="light" className="text-left custom-card-styles" style={{ width: '18rem' }}>
             <Card.Body>
                 <div className="card-title-link"> 
-                    <Card.Title>{experience.title}</Card.Title>
+                    <Card.Title>
+                        {experience.title}&nbsp;&nbsp;{renderWebsiteLink()}
+                    </Card.Title>
                     {renderCardLink()}
                 </div>
                 <Card.Text className="card-text">
