@@ -14,7 +14,7 @@ const Navigation = () => {
                 <Nav.Link as={Link} to="/education" onClick={() => setExpanded(false)}>Education</Nav.Link>
                 <Nav.Link as={Link} to="/experience" onClick={() => setExpanded(false)}>Experience</Nav.Link>
                 <Nav.Link as={Link} to="/photobook" onClick={() => setExpanded(false)}>Photobook</Nav.Link>
-                <Nav.Link >About</Nav.Link>
+                {/* <Nav.Link >About</Nav.Link> */}
             </Navbar.Collapse>
         </Navbar>
     )
